@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin:0; min-height:100vh; font-family:Arial,sans-serif; color:#633b4b; background:linear-gradient(135deg,#fff0f4,#fce0eb,#fff7f8); }
+.nav { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding:18px max(5%, calc((100% - 1050px)/2)); background:rgba(255,255,255,.88); border-bottom:1px solid #f4d5df; }
+.brand { color:#a84468; font-weight:bold; text-decoration:none; }
+.nav-links { display:flex; gap:18px; flex-wrap:wrap; }
+.nav-links a { color:#936779; text-decoration:none; font-size:14px; }
+.nav-links a:hover,.nav-links a.active { color:#b44870; font-weight:bold; }
+.container { width:min(100% - 32px,900px); margin:42px auto; text-align:center; padding:38px 28px; background:rgba(255,255,255,.9); border:1px solid #f6d4df; border-radius:24px; box-shadow:0 18px 55px rgba(145,65,95,.10); }
+.home { max-width:680px; }
+.heart { font-size:48px; animation:beat 1.2s infinite; }
+.eyebrow { color:#c06b88; letter-spacing:3px; font-size:11px; }
+h1 { margin:10px 0; color:#a84468; font-family:Georgia,serif; font-size:clamp(32px,6vw,48px); }
+.subtitle { color:#936779; line-height:1.7; }
+.letter { margin:28px 0 22px; padding:24px; text-align:left; line-height:1.8; background:#fff7fa; border-radius:18px; }
+.letter h2 { margin-top:0; color:#a84468; font-family:Georgia,serif; }
+.closing { color:#a84468; font-weight:bold; text-align:center; }
+.button { display:inline-block; padding:14px 24px; color:white; background:#c45d80; border-radius:30px; text-decoration:none; }
+.button:hover { background:#a84468; }
+footer { margin-top:28px; color:#b18a98; font-size:12px; }
+.gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:30px 0; text-align:center; }
+figure { margin:0; padding:9px; background:#fff7fa; border:1px solid #f5dce5; border-radius:15px; overflow:hidden; }
+figure img { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:10px; background:#f5dce5; }
+figcaption { padding:10px 4px 4px; color:#98677a; font-size:13px; }
+.tip { padding:12px; background:#fff7fa; border-radius:12px; color:#936779; font-size:13px; line-height:1.6; margin-bottom:24px; }
+@keyframes beat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.16)} }
+@media(max-width:650px) { .nav { justify-content:center; } .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); } .container { padding:28px 18px; margin:24px auto; } }
